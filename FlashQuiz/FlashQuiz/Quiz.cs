@@ -79,6 +79,8 @@ namespace FlashQuiz
                         toRetry.Add(question);
                     }
                     _QuestionCount++;
+                    Console.WriteLine();
+                    Console.WriteLine();
                 }
                 if (toRetry.Count > 0)
                 {
