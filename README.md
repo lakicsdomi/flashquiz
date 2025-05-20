@@ -58,7 +58,7 @@ FlashQuiz is a simple quiz application for practicing questions and answers from
 ### FlashQuiz2 (GUI)
 
 ![image](Documentation/Screenshots/desktop1.jpeg)
-You can find more screenshots at [here](Documentation/Screenshots)
+You can find more screenshots [here](Documentation/Screenshots).
 
 ---
 
