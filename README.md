@@ -1,74 +1,86 @@
 # FlashQuiz
 
-FlashQuiz is a simple console-based quizzing app for studying and knowledge reinforcement. Built entirely in C#, it loads quizzes from a text resource file and lets you take them right in your terminal.
+FlashQuiz is a simple quiz application for practicing questions and answers from a file. The repository contains **two separate projects**:
 
-![6e82df73-4a1c-4634-84c8-206193ecd1ac](https://github.com/user-attachments/assets/5a2c04d5-0eba-4733-8e7b-0fdeaffeeb66)
+---
+
+## Projects Overview
+
+### 1. FlashQuiz (Console)
+
+- **Type:** Console application
+- **Description:**  
+  A command-line tool where you can load questions from a file, answer them interactively, and the program keeps track of your score.
+- **Key Features:**
+  - Load questions from a file
+  - Answer questions via the console
+  - Score tracking
+- **Project Path:** `FlashQuiz/`
 
 
-## Features
+---
 
-- **Loads Questions from File:** Questions and answers are read from a local text file (`Resources/beugro.txt`).
-- **Multiple Choice Questions:** Each question can have up to four possible answers (a-d), with one correct answer.
-- **Console Interaction:** Presents questions and choices in the terminal, accepts your answer, and gives instant feedback.
-- **Score Tracking:** Shows your current score after each question.
-- **.NET 8.0 Project:** Built using modern C# and .NET 8.0 features.
+### 2. FlashQuiz2 (GUI with Avalonia UI)
 
-## Getting Started
+- **Type:** GUI application (cross-platform (Android and Windows), Avalonia UI)
+- **Description:**  
+  A graphical version of FlashQuiz. It provides a user-friendly interface for loading questions, answering them, and viewing your score.
+- **Key Features:**
+  - Load questions from a file
+  - Intuitive graphical interface (Avalonia UI)
+  - Real-time scoring
+- **Project Path:** `FlashQuiz2/`
 
-### Prerequisites
+---
 
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download) or later
-- A compatible IDE such as [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/)
+## How To Use
 
-### Installation
+### Running the Console Version
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/lakicsdomi/flashquiz.git
-    cd flashquiz
-    ```
+1. Navigate to the `FlashQuiz` directory.
+2. Build and run the application using your preferred .NET toolchain.
+3. Follow the on-screen prompts to load a question file and start answering.
 
-2. **Build the project:**
-    ```bash
-    dotnet build
-    ```
+### Running the GUI Version
 
-3. **Run the application:**
-    ```bash
-    dotnet run --project FlashQuiz/FlashQuiz
-    ```
+1. Navigate to the `FlashQuiz2` directory.
+2. Build and run the application.
+3. Use the graphical interface to load your question file and answer questions.
 
-## Usage
+---
 
-1. Make sure `Resources/beugro.txt` contains your questions in the correct format.
-2. Run the application.
-3. Answer each question by typing the letter (a, b, c, or d).
-4. See your score update after each question.
+## Screenshots
 
-### Question File Format
+### FlashQuiz
 
-- Each question starts with a number and a dot:
-    ```
-    1. What is 2+2?
-    X a. 4
-      b. 3
-      c. 2
-      d. 5
-    ```
-- Correct answers are marked with an `X` before the answer letter.
+![image](https://github.com/user-attachments/assets/5653fb3c-5fbd-4946-9c86-55d6860e81e8)
 
-## Project Structure
+### FlashQuiz2 (GUI)
 
-- `FlashQuiz/FlashQuiz/Program.cs` — Main entry point
-- `FlashQuiz/FlashQuiz/QuestionLoader.cs` — Loads questions from file
-- `FlashQuiz/FlashQuiz/Quiz.cs` — Quiz logic and score tracking
-- `FlashQuiz/FlashQuiz/Question.cs` — Question model
-- `FlashQuiz/FlashQuiz/Resources/beugro.txt` — Sample questions
+![image](Documentation/Screenshots/desktop1.jpeg)
+You can find more screenshots at [here](Documentation/Screenshots)
 
-## Contributing
+---
 
-Contributions are welcome! Open an issue or submit a pull request to propose changes or report bugs.
+## Question File Format
+
+Questions must be provided in a specific file format. Please refer to the documentation inside each project for sample files and format details.
+
+---
+
+## Requirements
+
+- .NET SDK (for building and running)
+- Avalonia UI dependencies (for FlashQuiz2 GUI version)
+
+---
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
+
+---
+
+## Contributing
+
+Feel free to open issues or submit pull requests if you'd like to contribute or suggest improvements.
