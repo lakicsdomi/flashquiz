@@ -65,6 +65,16 @@ You can find more screenshots [here](Documentation/Screenshots).
 ## Question File Format
 
 Questions must be provided in a specific file format. Please refer to the documentation inside each project for sample files and format details.
+It should look like this:
+
+```
+1. Question one
+a. Wrong answer 1
+b. Wrong answer 2
+X c. Correct answer 3
+```
+
+Each question has a letter in front of it, and the correct answer also has a capital X in front of it.
 
 ---
 
