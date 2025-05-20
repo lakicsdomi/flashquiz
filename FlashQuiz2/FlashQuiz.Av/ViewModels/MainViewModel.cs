@@ -4,6 +4,9 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using FlashQuiz.Av.Model;
 using Avalonia.Platform;
+using Avalonia.Styling;
+using Avalonia;
+using Avalonia.Controls.Primitives;
 namespace FlashQuiz.Av.ViewModels;
 
 public partial class MainViewModel : ObservableObject
@@ -80,25 +83,30 @@ public partial class MainViewModel : ObservableObject
         if (CurrentQuestion == null || answer == null)
             return;
 
+        // Detect theme: Light or Dark
+        var theme = Application.Current?.ActualThemeVariant;
+        string defaultColor = theme == ThemeVariant.Dark ? "#2F2F2F" : "#D3D3D3"; // DarkGray / LightGray
+
         foreach (var ans in Answers)
         {
-            // Mark the correct answer green
+            // Correct answer
             if (ans.Letter == CurrentQuestion.CorrectAnswer.Item1)
             {
                 ans.BackgroundColor = "#90EE90"; // LightGreen
             }
-            // If this is the selected answer and it's wrong, mark it red
+            // Selected wrong answer
             else if (ans == answer)
             {
                 ans.BackgroundColor = "#FFB6C1"; // LightCoral
             }
+            // Reset others to default based on theme
             else
             {
-                ans.BackgroundColor = "#FFFFFF"; // White (default)
+                ans.BackgroundColor = defaultColor;
             }
-
         }
     }
+
 
 
     private void Proceed()
@@ -127,7 +135,7 @@ public class AnswerViewModel : ObservableObject
     public string? Text { get; set; }
     public string? Letter { get; set; }
 
-    private string? _backgroundColor = "#FFFFFF";
+    private string? _backgroundColor = Application.Current?.ActualThemeVariant == ThemeVariant.Dark ? "#2F2F2F" : "#D3D3D3";
     public string? BackgroundColor
     {
         get => _backgroundColor;

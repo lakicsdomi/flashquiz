@@ -6,44 +6,84 @@
              mc:Ignorable="d"
              x:Class="FlashQuiz.Av.Views.MainView"
              x:DataType="vm:MainViewModel">
-    <Viewbox Stretch="Uniform">
-        <Grid Background="#F5F5F5" Margin="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
 
-            <!-- Score Display -->
-            <TextBlock Text="{Binding Score}" FontSize="16" FontWeight="Bold"
-                       HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" />
+    <!-- Wrapper to add padding and constrain layout -->
+    <Border Background="{DynamicResource ThemeBackgroundBrush}" Padding="16">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <Grid MaxWidth="800" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-            <!-- Flashcard Section -->
-            <Border Grid.Row="1" CornerRadius="10" Background="#FFFFFF" Padding="20">
-                <StackPanel Spacing="15">
-                    <!-- Question -->
-                    <TextBlock Text="{Binding CurrentQuestionText}" FontSize="20" FontWeight="Bold" TextWrapping="Wrap" />
+                <!-- Score Display -->
+                <TextBlock Text="{Binding Score}"
+                           FontSize="18" FontWeight="Bold"
+                           Foreground="{DynamicResource ThemeForegroundBrush}"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,12"/>
+
+                <!-- Flashcard Section -->
+                <Border Grid.Row="1"
+                        CornerRadius="10"
+                        Background="{DynamicResource ThemeControlBackgroundBrush}"
+                        Padding="16"
+                        HorizontalAlignment="Center">
+                    <StackPanel Spacing="16" HorizontalAlignment="Center">
+
+                        <!-- Question -->
+                        <TextBlock Text="{Binding CurrentQuestionText}"
+                                   FontSize="22" FontWeight="Bold"
+                                   Foreground="{DynamicResource SystemControlForegroundBaseHighBrush}"
+                                   TextWrapping="Wrap"
+                                   MaxWidth="760"
+                                   TextAlignment="Center"/>
+
+                        <!-- Answer Options -->
+						<!-- Answer Options -->
+						<ItemsControl ItemsSource="{Binding Answers}">
+							<ItemsControl.ItemsPanel>
+								<ItemsPanelTemplate>
+									<UniformGrid Columns="1" HorizontalAlignment="Left" />
+								</ItemsPanelTemplate>
+							</ItemsControl.ItemsPanel>
+							<ItemsControl.ItemTemplate>
+								<DataTemplate>
+									<Button Background="{Binding BackgroundColor}"
+											Foreground="{DynamicResource SystemControlForegroundBaseHighBrush}"
+											FontSize="18"
+											Padding="12"
+											HorizontalAlignment="Stretch"
+											Command="{Binding DataContext.AnswerCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+											CommandParameter="{Binding}">
+										<TextBlock Text="{Binding Text}"
+												   TextWrapping="Wrap"
+												   Foreground="{DynamicResource SystemControlForegroundBaseHighBrush}"
+												   TextAlignment="Left"
+												   HorizontalAlignment="Left"
+												   MaxWidth="760"/>
+									</Button>
+								</DataTemplate>
+							</ItemsControl.ItemTemplate>
+						</ItemsControl>
 
 
-                    <!-- Answer Options -->
-                    <StackPanel Spacing="10">
-                        <ItemsControl  ItemsSource="{Binding Answers}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <Button Content="{Binding Text}"
-                                            Background="{Binding BackgroundColor}"
-                                            Command="{Binding DataContext.AnswerCommand, RelativeSource={RelativeSource AncestorType=Window}}"
-                                            CommandParameter="{Binding}" />
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
-                    </StackPanel>
-                </StackPanel>
-            </Border>
+					</StackPanel>
+                </Border>
 
-            <!-- Proceed Button -->
-            <Button Grid.Row="2" Content="Next" IsEnabled="{Binding CanProceed}" 
-                    HorizontalAlignment="Center" Margin="10" Command="{Binding ProceedCommand}" />
-        </Grid>
-    </Viewbox>
+                <!-- Proceed Button -->
+                <Button Grid.Row="2"
+                        Content="Next"
+                        IsEnabled="{Binding CanProceed}"
+                        Background="{DynamicResource ThemeControlBackgroundBrush}"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        FontSize="18"
+                        Padding="12,8"
+                        HorizontalAlignment="Center"
+                        Margin="0,16,0,0"
+                        Command="{Binding ProceedCommand}" />
+            </Grid>
+        </ScrollViewer>
+    </Border>
 </UserControl>
