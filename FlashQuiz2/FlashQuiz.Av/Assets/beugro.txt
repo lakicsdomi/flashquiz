@@ -1,0 +1,594 @@
+3. Mely állítás hamis?
+a. Az integrációs és rendszer­tesztek első lépése a füstteszt.
+b. A kiadásteszt és a felhasználói teszt során a szoftvernek már általában a cél­környezetben, tényleges adatokkal kell dolgoznia.
+c. A tesztgyűjtemények által letesztelt programkód mértékét nevezzük kódlefedettségnek.
+ X d. A kiadásteszt nem foglalja magába a kihelyezést (pl. telepítés).
+
+
+16. Mi NEM jellemző oka a megírt kód folytonos változásának?
+a. követelmény változások
+b. hibajavítások
+c. új funkciók bevezetése
+ X d. kód minőségének javítása
+
+
+86. Melyik NEM tartozik a Scrum Master feladatkörei közé Mike Cohn szerint? [AI GENERALT]
+a. A Scrum események facilitálása és a folyamatokért való felelősségvállalás
+b. Az akadályok (impedimentek) eltávolítása a csapat munkájából
+ X c. A csapattagok napi feladatainak kiosztása és menedzselése
+d. A külső hatásoktól való védelem biztosítása a Scrum csapat számára
+
+
+31. Melyik állítás igaz a napi Scrum-ra?
+a. A napi Scrum-megbeszélésen bárki részt vehet és beszélhet a Scrum Master-rel jelentkezéses alapon.
+b. A napi Scrum során az a cél, hogy felszámoljuk a csapatot érintő akadályokat.
+c. A napi Scrum-megbeszélés célja, hogy a maximum 1 órára hosszúra korlátozott megbeszélés során a Scrum Master megismerje, hogy ki mennyit haladt a projekttel az előző megbeszélés óta.
+ X d. A napi Scrum-megbeszélés célja, hogy a Scrum csapat tagjai összehangolják tevékenységüket. A megbeszélés ideje maximum 15 percre korlátozott.
+
+
+19. Melyik tervezési mintát alkalmazhatjuk abban az esetben, ha egy adott osztály példányosítását szeretnénk a hozzátartozó alosztályokra áthárítani?
+a. Observer (Megfigyelő)
+ X b. Factory method (Gyártó függvény)
+c. Command (Parancs)
+d. Builder (Építő)
+
+
+77. Mi történik az Objektumkészlet (Object Pool) mintában, amikor a kliens befejezte az objektum használatát? [AI GENERALT]
+a. Az objektumot megsemmisítjük és eltávolítjuk a készletből.
+ X b. Visszarakjuk az objektumot a készletbe későbbi újrafelhasználásra.
+c. Klónozunk egy új példányt minden használatkor.
+d. A kliens blokkolódik, amíg új objektum nem érkezik.
+
+
+38. Mely állítás igaz a verifikációval kapcsolatban?
+a. A statikus elemzés ellenére nem garantált a hibák egymás általi elfedése.
+b. A statikus elemzés a teljes programkód ismeretében végezhető el.
+c. A dinamikus elemzés nem alkalmas a program teljesítményének mérésére.
+ X d. A dinamikus elemzés felfedheti a programegységek együttműködéséből származó hibákat.
+
+
+11. Mely állítás nem igaz a container framework-ökre (pl. Docker)?
+a. A containerek saját, elkülönített, virtualizált környezetben futnak.
+b. A containerekben futó alkalmazások belső hálózati kapcsolaton kommunikálhatnak egymással.
+c. Minden container osztozik a gazda számítógép hardveres erőforrásain.
+ X d. A containerek futó alkalmazások annak saját virtuális operációs rendszerén (pl. Docker OS) futnak.
+
+
+5. Mely állítás igaz?
+a. A füsttesztet a tápegységből felszálló füst mennyiségének mérésével végzik.
+ X b. A felhasználói teszt jellemzően fekete doboz tesztekből áll.
+c. A kiadás­tesztet a fejlesztő csapat végzi.
+d. A fejlesztői teszt jellemzően fekete doboz tesztekből áll.
+
+
+62. Melyik fájlformátumban definiáljuk a GitLab CI/CD konfigurációját? [AI GENERALT]
+ X a. .gitlab-ci.yml
+b. .travis.yml
+c. Jenkinsfile
+d. azure-pipelines.yml
+
+
+27. Mi a különbség a folyamat (process) és a szál (thread) között?
+ X a. A folyamatoknak saját végrehajtási környezetük (pl. memóriaterület) van, a szálak osztozkodnak ezen.
+b. Nincs különbség, a kettő egymás szinonimája.
+c. A folyamatokat Linux operációs rendszeren szálaknak hívjuk.
+d. Egy szál több folyamatot is tartalmazhat.
+
+
+85. Melyik állítás NEM jellemző a többszálú programozás során tapasztalható hibákra C++-ban? [AI GENERALT]
+a. Race condition (versenyhelyzet)
+b. Deadlock (holtponthiba)
+ X c. Buffer overflow (puffer túlcsordulás)
+d. Starvation (kiéheztetés)
+
+
+39. A tesztelés...
+a. …célja fordítási időben felderíteni a hibákat.
+b. …garantálja, hogy a program minden körülmény között helytáll.
+ X c. …futási idejű hibák, rendellenességek, kompatibilitási problémák keresésére használatos.
+d. …garantálja, hogy a program hibamentes.
+
+
+63. Mi a fő különbség a Docker konténerek és a virtualizált virtuális gépek között? [AI GENERALT]
+ X a. A konténerek osztoznak a gazda gép kerneljén, míg a VM-ek teljes operációs rendszert virtualizálnak.
+b. A konténerek külön kernel-t futtatnak minden példányban.
+c. A VM-ek kisebb overhead-del rendelkeznek a konténerekhez képest.
+d. A konténerek csak Windows rendszeren futtathatók.
+
+
+71. Melyik nem típusú executor a GitLab Runner számára? [AI GENERALT]
+a. Shell
+b. SSH
+c. Kubernetes
+ X d. Jenkins
+
+
+33. Melyik lineáris szoftverfejlesztési modell az alábbiak közül?
+a. Scrum
+b. Kanban
+ X c. Waterfall (Vízésés)
+d. Spiral (Spirális)
+
+
+25. Mely tervminta ad lehetőséget egy gyűjtemény bejárására anélkül, hogy az elemek ábrázolását ismernénk?
+a. Stratégia (Strategy)
+b. Emlékeztető (Memento)
+c. Közvetítő (Mediator)
+ X d. Bejáró (Iterator)
+
+
+84. Mi különbözteti meg a folyamatos telepítést (continuous deployment) a folyamatos kiadástól (continuous delivery) a CI/CD gyakorlatban? [AI GENERALT]
+a. A continuous delivery automatikusan telepít a tesztkörnyezetbe, míg a continuous deployment manuálisan történik.
+ X b. A continuous deployment az összes sikeres build után automatikusan kiadja a kódot a termelési környezetbe.
+c. A continuous delivery azonnali visszajelzést ad a fejlesztőnek, míg a continuous deployment csak napi egyszer fut le.
+d. A continuous delivery kizárólag a verziókezelésről szól, a continuous deployment a tesztelésről.
+
+
+81. Mi történik, ha egy std::thread objektumon meghívjuk a detach() metódust? [AI GENERALT]
+a. A szál azonnal leáll, és a thread objektum nem joinolható.
+b. A szál és a thread objektum örökre összekapcsolódik, így biztosított a végrehajtás lezárása.
+ X c. A fizikai szál leválik a thread objektumról, és önállóan, háttérben fut tovább.
+d. A detach() hívás helyett automatikusan a join() hívódik meg.
+
+
+52. Mit jelent párhuzamos környezetben a kiéheztetés?
+a. A szálak nem mondanak le a használt erőforrásaikról.
+b. Mire a program hajlandó befejeződni, a felhasználó már régen éhen halt.
+c. A párhuzamos program szálai nem tudnak elindulni, mert az operációs rendszer korábban zombi állapotba került.
+ X d. Egy szál nem tud hozzáférni a kívánt erőforráshoz huzamosabb ideig, mert más, hosszú futásidejű szálak korábban kapják azt meg.
+
+
+17. Melyik tervmintát soroltuk rossz osztályba?
+a. Felelősséglánc – Viselkedési minta
+b. Építő – Létrehozási minta
+c. Egyke – Létrehozási minta
+ X d. Pehelysúlyú – Viselkedési minta
+
+
+56. Mely tervminta teszi lehetővé a kérések továbbítását a kezelők lánca mentén? [AI GENERALT]
+ X a. Felelősséglánc (Chain of Responsibility)
+b. Híd (Bridge)
+c. Közvetítő (Mediator)
+d. Építő (Builder)
+
+
+83. Melyik a Windows GitLab Runner-ek alapértelmezett Docker image-e? [AI GENERALT]
+a. ubuntu:22.04
+ X b. mcr.microsoft.com/windows/servercore:1809
+c. alpine:latest
+d. centos:7
+
+
+0. Milyen nyelven írható le a GitLab CI/CD konfigurációja?
+ X a. YAML
+b. XAML
+c. JSON
+d. XML
+
+
+55. Mely tervmintával csökkenthetjük a szükséges memóriát úgy, hogy megosztjuk az állapot közös részeit több objektum között egy új objektumban?
+ X a. Pehelysúlyú (Flyweight)
+b. Összetétel (Composite)
+c. Illesztő (Adapter)
+d. Helyettes (Proxy)
+
+
+72. A .gitlab-ci.yml fájlban mi a dependencies szekció szerepe? [AI GENERALT]
+a. A pipeline szakaszok (stages) sorrendjének meghatározása.
+b. A build kép elkészítésének konfigurálása.
+ X c. Artifactok megosztása a jobok között, hogy a ráépülő jobok hozzáférjenek a korábbi kimenetekhez.
+d. Futtatási környezeti változók definiálása.
+
+
+20. Melyik tervezési mintát alkalmazhatjuk abban az esetben, ha konkrét osztály megadása nélkül szeretnénk kapcsolódó vagy egymástól függő objektumok családjának létrehozására felületet biztosítani?
+a. Adapter (Illesztő)
+b. Factory method (Gyártó függvény)
+c. Builder (Építő)
+ X d. Abstract Factory (Absztrakt gyár)
+
+
+50. Mely metódussal tud egy szál lemondani a CPU-időről?
+ X a. sleep
+b. interrupt
+c. suspend
+d. wait
+
+
+43. Melyik NEM része a TDD három alapszabályának?
+a. Csak annyi kódot írjunk, amennyi éppen elegendő a sikeres teszthez.
+ X b. A sikeres tesztelést mindig refaktorálás követi.
+c. Tesztből csak éppen elegendő mértékűt írjunk a hiba demonstrálásához.
+d. NE kódoljunk semmit, kivéve ami ahhoz kell, hogy a programunk átmenjen a sikertelen teszten.
+
+
+53. Egy lock-ként használt objektum mely metódusával ébreszthető fel az arra várakozó szál?
+ X a. notify
+b. wake
+c. wait
+d. spotify
+
+
+75. A C++ std::condition_variable::wait második paramétereként átadott lambdafüggvény szerepe: [AI GENERALT]
+a. Automatikusan újrazárolja a mutexet minden ébredéskor.
+ X b. Csak akkor tér vissza, amikor a lambdafüggvény true értéket ad, ezzel elkerülve a véletlenszerű ébredéseket (spurious wake).
+c. Az ébredéskor automatikusan újraindítja a producer szálat.
+d. A lambdafüggvény a mutex felszabadítását végzi.
+Back to Course Selection
+
+
+46. Mely szál futtatja az eseménykezelésért felelős tevékenységeket?
+a. ELT
+b. DBT
+ X c. EDT
+d. DDT
+
+
+22. Mely tervminta fordítja le egy osztály interfészét egy kompatibilis másik interfészre?
+a. Híd (Bridge)
+ X b. Illesztő (Adapter)
+c. Homlokzat (Facade)
+d. Helyettes (Proxy)
+
+
+29. Mi a kiéheztetés (starvation)?
+a. Olyan logikai hiba, amelynek során egy közös erőforráshoz több szál is egyszerre hozzáférhet, ezzel inkonzisztens állapotba juttatva a programot.
+ X b. Olyan prioritási hiba, amely esetén a kis prioritású vagy nagy erőforrás-igényű folyamatok sosem képesek lefutni.
+c. Olyan ütemezési hiba, amely során egy erőforrásra több szál is várakozik és egyikük sem jut soha hozzá, így “lefagy” a program.
+d. Olyan jogosultság-kezelési hiba, amely során egy szál nem tudja a szükséges erőforrásokat (pl. fájlokat) megnyitni.
+
+
+70. Mi a Double-Checked Locking minta (DCLP) fő problémája a Singleton inicializálása során C++-ban? [AI GENERALT]
+a. A lock_guard nem oldja fel megfelelően a zárolást.
+ X b. A lock előtti és utáni resource_ptr ellenőrzés nincs megfelelően szinkronizálva, ami versenyhelyzethez vezethet.
+c. A std::call_once nem garantálja az inicializáló függvény egyszeri futását.
+d. A Meyers Singleton C++11 előtti verziókban nem működik.
+
+
+8. Mi a folyamatos teljesítés (continuous delivery) célja?
+a. A folyamatos kiadások automatizálása.
+b. Az önszerveződő, kis csapatok folytonos interakciójának biztosítása gyors visszajelzésekkel.
+c. A programkódok egy központi tárhelyre küldése, verziókezelő rendszer segítségével, naponta többször.
+ X d. A gyors alkalmazásfejlesztés megvalósítása, inkrementális alapon.
+
+
+28. Melyik állítás hamis az std::future típusra?
+a. Az std::future típusú típus alkalmas kivételek átadására is szálak között.
+b. Egy std::future típus objektum egy ígéret arra, hogy egy T típusú eredmény előállításra kerül majd.
+ X c. Egy std::future típusú objektumba beleírható egy másik szálon majd kiolvasható érték.
+d. Az std::future típus objektum nem feltétlen aszinkron végrehajtást jelent.
+
+
+79. Mi az Absztrakt Gyár (Abstract Factory) minta fő előnye a kliensoldali kód számára? [AI GENERALT]
+a. Lehetővé teszi, hogy egyetlen gyártófüggvény többféle típusú objektumot hozzon létre.
+ X b. Elrejti a platformfüggő osztályokat, így a kliens nem ismeri a konkrét termékosztályokat.
+c. Automatikusan frissíti a gyárat minden új termékelváltozáskor.
+d. A gyár és termékosztályok egyetlen osztályban kerülnek deklarálásra.
+
+
+1. A fejlesztői teszt lépéseinek helyes sorrendje:
+a. rendszerteszt, integrációs teszt, egységteszt
+b. integrációs teszt, egységteszt, rendszerteszt
+c. egységteszt, rendszerteszt, integrációs teszt
+ X d. egységteszt, integrációs teszt, rendszerteszt
+
+
+37. Mi az előadáson elmondott planning poker?
+ X a. projektmenedzsment becslési módszere
+b. kártyajáték
+c. szerencsejáték
+d. szoftver tervezésének becslési módszere
+
+
+80. Mit ad vissza a C++ std::thread::hardware_concurrency() függvénye? [AI GENERALT]
+a. A létrehozott szálak maximális száma.
+b. A jelenleg futó szálak száma.
+ X c. A párhuzamos végrehajtásra alkalmas hardverprocesszorok száma.
+d. A rendszer által támogatott maximális folyamatok száma.
+
+
+61. Mi a std::packaged_task célja a C++ multithreading támogatásában? [AI GENERALT]
+ X a. Egy callable objektumot egy std::future-hez köt, lehetővé téve az eredmény aszinkron lekérdezését.
+b. Több szál egyesítését biztosítja egy közös futtatókörnyezetbe.
+c. Automatikusan újrafuttatja a hibás thread-et, amíg sikeres nem lesz.
+d. Zárolja a kritikus szakaszt a lock() metódus meghívásakor.
+
+
+74. A tesztvezérelt fejlesztés (TDD) melyik lépés következik közvetlenül a teszteset megírása után? [AI GENERALT]
+a. Refaktorálás
+b. A teszteset futtatása
+c. A termékkövetelmények dokumentálása
+ X d. Az implementáció megvalósítása
+
+
+67. Mi a GoF definíciója a szoftver tervezési mintára? [AI GENERALT]
+a. Egy nyelvi könyvtár, amely újrafelhasználható komponenseket biztosít.
+ X b. Olyan egymással együttműködő objektumok és osztályok leírása, amelyek testre szabott formában valamilyen általános tervezési problémát oldanak meg egy bizonyos összefüggésben.
+c. Egy automatikus kódgeneráló eszköz a tervezési feladatokhoz.
+d. Egy UML-diagram készítő minta.
+
+
+65. Melyik nem része a Scrum eseményeinek? [AI GENERALT]
+a. Futam tervezés
+b. Napi Scrum
+c. Visszatekintés
+ X d. Termék kívánságlista finomítás (backlog refinement)
+
+
+18. Melyik NEM LÉTEZŐ tervminta osztály?
+a. Szerkezeti
+ X b. Végrehajtási
+c. Viselkedési
+d. Létrehozási
+
+
+49. A Thread objektum mely metódusával indítható el új szál?
+ X a. start
+b. spawn
+c. run
+d. execute
+
+
+24. Mely tervminta tudja csökkenteni az objektumok közötti függőségeket?
+a. Illesztő (Adapter)
+ X b. Közvetítő (Mediator)
+c. Híd (Bridge)
+d. Gyártó művelet (Factory method)
+
+
+48. Mi a szálak alapértelmezett prioritása?
+a. 1
+b. 0
+ X c. 5
+d. 10
+
+
+41. A folyamatos teljesítés célja...
+ X a. …a gyors alkalmazásfejlesztés megvalósítása, inkrementális alapon.
+b. …a folyamatos kiadások automatizálása.
+c. …az önszerveződő, kis csapatok folytonos interakciójának biztosítása gyors visszajelzésekkel.
+d. …hogy a programkódok verziókezelő rendszer segítségével egy központi tárhelyre kerüljenek, naponta többször.
+
+
+82. Melyik NEM GitLab Runner executor típus? [AI GENERALT]
+a. Shell
+b. SSH
+c. Kubernetes
+ X d. VMware
+
+
+2. A tesztelés...
+a. …garantálja, hogy a program hibamentes.
+b. …célja fordítási időben felderíteni a hibákat.
+c. …garantálja, hogy a program minden körülmény között helytáll.
+ X d. …futási idejű hibák, rendellenességek, kompatibilitási problémák keresésére használatos.
+
+
+26. Melyik állítás igaz a RAIL (Resource Allocation Is Initialization) paradigmára vonatkozóan?
+a. Jelentése, hogy minden objektum példányosítás megfeleltethető egy erőforrás foglalásnak.
+b. Jelentése, a biztonságos memóriakezelés azáltal, hogy a hatókörön kívül került objektumokat a szemétgyűjtő felszabadítja (garbage collection).
+c. Jelentése, hogy minden erőforrás foglalás megfeleltethető egy objektum példányosításnak, ezért a paradigma C++ nyelven nem alkalmazható, mert nem csak objektum-orientáltan lehet programozni a nyelvben.
+ X d. Jelentése, hogy a kezelendő erőforrás az osztály invariantása: annak lefoglalására / megnyitására az objektumok létrehozásakor, a felszabadítására / bezárására az objektum megsemmisítésekor kell sor kerüljön.
+
+
+4. Az alábbiak közül melyik egy Lehman-törvény?
+a. Egy szoftvert folyamatosan használni kell, hogy folyamatosan nőjön a használhatósága és minősége.
+b. Egy szoftvert folyamatosan használni kell, vagy különben folyamatosan csökken a használhatósága és minősége.
+c. Egy szoftvernek változnia kell, hogy folyamatosan csökkenjen a használhatósága és minősége.
+ X d. Egy szoftvernek változnia kell, vagy különben folyamatosan csökken a használhatósága és minősége.
+
+
+21. Melyik tervezési minta alkalmazható a hosszú paraméterlistájú konstruktorok elkerülésére?
+a. Observer (Megfigyelő)
+b. Factory (Gyártó)
+ X c. Builder (Építő)
+d. Command (Parancs)
+
+
+34. A három Scrum-termék (artifacts) a következő:
+a. termék kívánságlista (product backlog), Scrum tábla (Scrum table), haladási diagram (progress diagram)
+b. termékvízió (product vision), termék kívánságlista (product backlog), felhasználói történet (user story)
+ X c. termék kívánságlista (product backlog), futam teendőlista (sprint backlog), inkrementum (increment)
+d. termék kívánságlista (product backlog), futam teendőlista (sprint backlog), Scrum tábla (Scrum table)
+
+
+60. C++-ban melyik konstrukció biztosítja egy std::mutex egyszerű, RAII-stílusú rövid idejű zárolását? [AI GENERALT]
+a. std::mutex::lock() és std::mutex::unlock()
+ X b. std::lock_guardstd::mutex
+c. std::unique_lockstd::mutex defer_lock nélkül
+d. std::scoped_lock, ha nem adunk meg mutex-eket
+
+
+68. Mely viselkedési minta teszi lehetővé, hogy egy algoritmus egyes lépéseit előre definiáljuk, ugyanakkor bizonyos lépéseket az alosztályokra ruházzunk át implementációra? [AI GENERALT]
+a. Strategy (Stratégia)
+b. Observer (Megfigyelő)
+ X c. Template Method (Sablonfüggvény)
+d. Visitor (Látogató)
+
+
+42. Az alábbiak közül melyik nincs kapcsolatban a folyamatos integrációval?
+a. AppVeyor
+b. Travis
+c. GitLab
+ X d. JetLag
+
+
+69. Mely létrehozási minta kezeli az objektumok magas létrehozási költségét úgy, hogy előre inicializált példányok csoportját tartja használatra készen? [AI GENERALT]
+ X a. Object Pool (Objektumkészlet)
+b. Prototype (Prototípus)
+c. Singleton (Egyke)
+d. Factory Method (Gyártófüggvény)
+
+
+6. Melyik nem fejlesztői teszt?
+ X a. kiadásteszt (release test)
+b. integrációs teszt (integration test)
+c. egységteszt (unit test)
+d. rendszerteszt (system test)
+
+
+59. Az alábbi viselkedési minták közül melyik teszi lehetővé, hogy egy objektumstruktúrához új műveleteket adjunk anélkül, hogy az eredeti osztályokat módosítanánk? [AI GENERALT]
+a. Strategy (Stratégia)
+b. Observer (Megfigyelő)
+ X c. Visitor (Látogató)
+d. Composite (Összetétel)
+
+
+58. Melyik állítás HAMIS a Lehman-törvényekkel kapcsolatban? [AI GENERALT]
+a. A szoftvernek változnia kell, vagy különben folyamatosan csökken a használhatósága és minősége.
+b. A változó szoftver egyre összetettebb lesz és egyre több funkciót tartalmaz.
+ X c. Az evolúciós folyamatban a rendszer tulajdonságai (méret, hibák száma) szorosan követik a kiadások sorrendjét.
+d. Az evolúciós folyamat önszabályozó, és a rendszer tulajdonságai függetlenek az egyes kiadástól.
+
+
+44. Mi igaz a TDD elvű fejlesztésre?
+a. A végső kódnak elegendő jól működnie az utoljára bevezetett tesztesetekben.
+ X b. A tesztek a lehetséges használati eseteknek csak egy részhalmazát fedik le.
+c. Elegendő, ha csak annyit kódolunk, ami pillanatnyilag szükséges.
+d. Vég eredményként egy strukturált kódot kapunk, ami kielégíti a teszteket, de még esetlegesen refaktorálásra szorul.
+
+
+78. Melyik állítás jellemzi legpontosabban a Sablonfüggvény (Template Method) mintát? [AI GENERALT]
+a. Egy osztály interfészét illeszti át más kompatibilis interfészre.
+ X b. Meghatározza egy algoritmus általános lépéseit, és az egyes lépések implementálását az alosztályokra bízza.
+c. Automatikusan hozza létre az objektumok példányait egy központi tárolóból.
+d. Egyetlen metódusban gyűjti össze az összes implementációt.
+
+
+14. Melyik állítás hamis a metódusokkal kapcsolatban a Clean Code-nál?
+a. A megvalósítás férjen rá egy képernyőre.
+b. Ne ismételjük önmagunkat a kódban (DRY).
+c. A blokkoknak egyértelmű be- és kilépési pontja kell legyen (break, continue nem megengedett).
+ X d. Egy metódus több absztrakciós szintet is megvalósíthat.
+
+
+13. Melyik koncepció része a Clean Code-nak?
+ X a. Ugyanazt a nevet ne használjuk különböző célra
+b. Rövidítsük mindig a változó neveket
+c. A break és continue utasításokat elővigyázatosan kell alkalmaznunk.
+d. Használjunk prefixeket az elnevezéseknél
+
+
+57. A következők közül melyik NEM tartozik a szoftver evolúció három karbantartási típusának egyikébe? [AI GENERALT]
+a. perfective maintenance (tökéletesítő karbantartás)
+b. adaptive maintenance (adaptív karbantartás)
+ X c. predictive maintenance (előrejelző karbantartás)
+d. corrective maintenance (hibajavítás)
+
+
+73. Mire szolgál a cache szekció a GitLab CI/CD konfigurációjában? [AI GENERALT]
+a. Változók definiálására a jobok futtatási környezetében.
+ X b. Cache-elt fájlok és könyvtárak megőrzésére pipeline-ok és jobok között a függőségek gyorsabb letöltéséhez.
+c. Service konténerek konfigurálására.
+d. Artifacts időkorlát nélküli megőrzésére.
+
+
+66. Melyik állítás igaz a statikus kódelemzésre? [AI GENERALT]
+ X a. A forráskód fordítás előtt képes feltárni lehetséges hibákat és kódstílus-eltéréseket.
+b. A futás közbeni memóriaszivárgás detektálására szolgál.
+c. A program dinamikus viselkedését modellezi tesztadatokkal.
+d. A unit tesztek futtatását végzi.
+
+
+23. Mely tervminta ad egyszerűsített felületet egy könyvtárhoz, keretrendszerhez stb.?
+ X a. Homlokzat (Facade)
+b. Illesztő (Adapter)
+c. Helyettes (Proxy)
+d. Híd (Bridge)
+
+
+15. Melyik fajta kommentet kerüljük?
+a. Következményre figyelmeztető komment
+b. TODO
+ X c. Kikommentelt kód
+d. Szándékot, pontosítást tartalmazó komment
+
+
+12. Mely tulajdonságok jellemzőek a Clean Code-ra?
+a. Olvasható, tömör, öndokumentáló
+b. Könnyen olvasható, nem tartalmaz kódismétlést, tesztelhető
+ X c. Olvasható, karbantartható, tesztelhető, elegáns
+d. Jól dokumentált, tesztelt, elegáns
+
+
+45. Melyik állítás igaz a Clean Code-al kapcsolatban?
+a. A függvények egyszerre valaszolhatnak egy kérdésre és hajthatnak végre valamit.
+ X b. A kód és a komment nem feltétlenül él együtt.
+c. Hibakódokat és kivételeket egyaránt használunk.
+d. A komment segít a nehezen érthető kódot megérteni.
+
+
+35. Melyik nem agilis szoftverfejlesztési módszertan szerinti modell az alábbiak közül?
+a. Scrum
+b. Lean
+ X c. Rational Unified Process (RUP)
+d. Kanban
+
+
+76. A hibajavítás költsége a hiba felfedezésének helye függvényében melyik esetben a legmagasabb? [AI GENERALT]
+a. Követelmények specifikációkor
+b. Tervezés során
+c. Implementációkor
+ X d. Üzemeltetéskor
+
+
+64. Melyik állítás NEM jellemző a Clean Code-ra az előadáson ismertetett tulajdonságok alapján? [AI GENERALT]
+a. Olvasható
+b. Karbantartható
+c. Tesztelhető
+ X d. Gazdagon dokumentált
+
+
+7. Mi a célja a folyamatos integrációs (continuous integration, CI) gyakorlati módszernek?
+a. A manuális tesztelés teljes kiváltása.
+b. Az elbukott integrációs tesztek automatikus újra futtatása, ameddig meg nem javulnak.
+c. Objektum orientált programozási nyelvre való átállást segíti elő.
+ X d. A lehetséges hibák, integrációs problémák azonnali, automatizált kiszűrése, visszajelzés a fejlesztőnek.
+
+
+30. Melyik állítás igaz a kölcsönös kizárásra (mutual exclusion)?
+a. A kölcsönös kizárás célja a szálak szinkronizációja: a kritikus szakasz mindig ugyanazon a szálon fusson le.
+b. Nincsen olyan többszálú program, amely kölcsönös kizárás nélkül helyesen tud működni.
+ X c. A kölcsönös kizárás garantálja, hogy a közös erőforráshoz egyszerre csak egy szál férhessen hozzá, kizárva ezzel a versenyhelyzetet (race condition).
+d. A kölcsönös kizárás célja, hogy a többszálú program egyszerre mindig csak egy szál futhasson.
+
+
+47. Melyik nem létező szálállapot?
+a. Resumed
+b. Suspended
+ X c. Stopped
+d. Running
+
+
+40. Mely állítás igaz?
+ X a. A felhasználói teszt jellemzően fekete doboz tesztekből áll.
+b. A fejlesztői teszt jellemzően fekete doboz tesztekből áll.
+c. A kiadás tesztet a fejlesztő csapat végzi.
+d. A füst tesztet a tápegységből felszálló füst mennyiségének mérésével végzik.
+
+
+32. Melyik állítás igaz a Scrum master-re?
+ X a. A Scrum master a folyamatokért felel.
+b. A Scrum master vezeti a napi Scrumot.
+c. A Scrum master nem felel azért, hogy külső hatásoktól védje a Scrum csapat munkáját.
+d. A Scrum master a Scrum csapat menedzsere.
+
+
+51. Egy szál mely metódusának meghívásával lehet megvárni a szál befejeződését?
+a. await
+b. stop
+c. wait
+ X d. join
+
+
+9. Hogy hívjuk a folyamatos integráció és teljesítés egymásra épülő feladatait?
+a. task
+ X b. job
+c. milestone
+d. module
+
+
+36. Melyik nem iteratív szoftverfejlesztési módszertan szerinti modell az alábbiak közül?
+a. Spiral (Spirális)
+b. Scrum
+ X c. Kanban
+d. Extreme Programming (XP)
