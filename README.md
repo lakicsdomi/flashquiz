@@ -6,6 +6,8 @@ FlashQuiz is a simple quiz application for practicing questions and answers from
 
 ## Projects Overview
 
+This project was inspired when I needed a quizzing app for studying for my **Software technologies** subject. I didn't like the other apps on the internet, because they didn't have the functionalities I wanted, so I made my own.
+
 ### 1. FlashQuiz (Console)
 
 - **Type:** Console application
