@@ -1,0 +1,49 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.vspscc
+*.vssscc
+*.dbmdl
+*.bak
+*.bkp
+*.tmp
+
+# Visual Studio working folder
+.vs/
+
+# NuGet packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# Others
+*.ide
+*.sdf
+*.scc
+*.vsp
+*.psess
+*.vspx
+*.vsix
+*.docstates
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
