@@ -2,6 +2,12 @@
 
 FlashQuiz is a simple console-based quizzing app for studying and knowledge reinforcement. Built entirely in C#, it loads quizzes from a text resource file and lets you take them right in your terminal.
 
+![eaf3861c-9270-4c2c-b077-4e1c36a87201](https://github.com/user-attachments/assets/0436c9a6-ddad-4b26-b8f3-389c76af44c5)
+
+![7de437f1-5090-4cd9-8ca6-672783825c04](https://github.com/user-attachments/assets/e3e3a474-edca-4888-92bc-a2060463d152)
+
+
+
 ## Features
 
 - **Loads Questions from File:** Questions and answers are read from a local text file (`Resources/beugro.txt`).
