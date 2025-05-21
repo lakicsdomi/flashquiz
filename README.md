@@ -31,6 +31,7 @@ This project was inspired when I needed a quizzing app for studying for my **Sof
   - Load questions from a file
   - Intuitive graphical interface (Avalonia UI)
   - Real-time scoring
+  - Progress tracking
 - **Project Path:** `FlashQuiz2/`
 
 ---
