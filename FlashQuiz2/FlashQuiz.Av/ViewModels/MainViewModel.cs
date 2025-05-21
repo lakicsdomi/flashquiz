@@ -15,6 +15,7 @@ public partial class MainViewModel : ObservableObject
     private int _currentQuestionIndex;
     private int _score;
     private bool _canProceed;
+    private bool _canAnswer;
     private AnswerViewModel? _selectedAnswer;
 
     public MainViewModel()
@@ -31,6 +32,7 @@ public partial class MainViewModel : ObservableObject
     }
 
     public string Score => $"Score: {_score}/{_currentQuestionIndex}";
+    public string Progress => $"Progress: {_currentQuestionIndex}/{_quiz.Questions.Count}";
     public string? Greeting => "Welcome to Avalonia!";
 
     public string? CurrentQuestionText => CurrentQuestion?.QuestionText;
@@ -47,6 +49,16 @@ public partial class MainViewModel : ObservableObject
         {
             SetProperty(ref _canProceed, value);
             ProceedCommand.NotifyCanExecuteChanged();
+        }
+    }
+
+    public bool CanAnswer
+    {
+        get => _canAnswer;
+        set
+        {
+            SetProperty(ref _canAnswer, value);
+            // AnswerCommand.NotifyCanExecuteChanged();
         }
     }
 
@@ -70,15 +82,22 @@ public partial class MainViewModel : ObservableObject
             }
         }
         CanProceed = false;
+        CanAnswer = true;
         _selectedAnswer = null;
         OnPropertyChanged(nameof(CurrentQuestionText));
         OnPropertyChanged(nameof(Score));
+        OnPropertyChanged(nameof(Progress));
     }
 
     private void SelectAnswer(AnswerViewModel? answer)
     {
         _selectedAnswer = answer;
         CanProceed = true;
+        
+        if(CanAnswer == false)
+        {
+            return;
+        }
 
         if (CurrentQuestion == null || answer == null)
             return;
@@ -105,6 +124,7 @@ public partial class MainViewModel : ObservableObject
                 ans.BackgroundColor = defaultColor;
             }
         }
+        CanAnswer = false;
     }
 
 

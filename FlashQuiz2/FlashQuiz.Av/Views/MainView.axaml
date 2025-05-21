@@ -17,12 +17,26 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <!-- Score Display -->
-                <TextBlock Text="{Binding Score}"
+                <!-- Score and Progress Display -->
+				<Grid x:Name="Scoreprogress">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"></ColumnDefinition>
+						<ColumnDefinition Width="*"></ColumnDefinition>
+					</Grid.ColumnDefinitions>
+
+					<TextBlock Grid.Column="0" Text="{Binding Progress}"
                            FontSize="18" FontWeight="Bold"
                            Foreground="{DynamicResource ThemeForegroundBrush}"
                            HorizontalAlignment="Center"
                            Margin="0,0,0,12"/>
+
+					<TextBlock Grid.Column="1" Text="{Binding Score}"
+                           FontSize="18" FontWeight="Bold"
+                           Foreground="{DynamicResource ThemeForegroundBrush}"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,12"/>
+				</Grid>
+                
 
                 <!-- Flashcard Section -->
                 <Border Grid.Row="1"
@@ -51,6 +65,7 @@
 							<ItemsControl.ItemTemplate>
 								<DataTemplate>
 									<Button Background="{Binding BackgroundColor}"
+											IsEnabled="{Binding CanAnswer}"
 											Foreground="{DynamicResource SystemControlForegroundBaseHighBrush}"
 											FontSize="18"
 											Padding="12"
